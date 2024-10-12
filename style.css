@@ -15,7 +15,9 @@ body {
     line-height: 1.6;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
@@ -28,18 +30,28 @@ a {
 .cabecera {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 20px;
     background-color: var(--color-de-fondo-menu);
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.cabecera__img {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: start;
 }
 
 .navegacion__lista {
@@ -49,23 +61,281 @@ a {
 .navegacion__elemento a {
     font-size: 0.9rem;
 }
-/* ------------------------------ Sección Presentación ------------------------------*/
 
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    background-color: var(--color-de-fondo-menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.presentacion__foto{
+    max-width: 10rem;
+    align-self: start;
+    border-radius: 100%;
+}
+.redes {
+    /*quitamos el estilo de la lista*/
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 1rem;
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-inline: 1rem;
+    background-color: #EAF2FD;
 
+}
+
+.sobre-mi__firma {
+    max-width: 100px;
+}
+
+.sobre-mi__titulo {
+    text-align: start;
+}
+
+.sobre-mi__texto {
+    text-align: start;
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
 
+.habilidades__titulo {
+    text-align: center;
+}
+
+.habilidades__lista {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.habilidades__elemento {
+    background-color: #FFFFFF;
+    min-width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.habilidades__icono {
+    max-width: 40px;
+    padding-left: .5rem;
+}
+
+.habilidades__nombre {
+    text-align: start;
+    padding-left: .5rem;
+}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
 
+.aficiones__titulo {
+    text-align: center;
+}
+
+.aficiones__lista {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.aficiones__elemento {
+    background-color: #FFFFFF;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+.aficiones__icono {
+    padding-left: .5rem;
+}
+
+.aficiones__nombre {
+    padding-left: .5rem;
+}
+/*------------------------------ Formación --------------------------------*/
+.formacion {
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.formacion__titulo {
+    text-align: center;
+}
+
+.formacion__lista {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formacion__elemento {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion__icono {
+    background-color: #FFFFFF;
+    width: 9rem;
+    height: 6rem;
+    padding-inline: 6rem;
+    padding-block: 2rem;
+}
+
+.formacion__nombre {
+    text-align: start;
+}
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 4rem;
+}
 
-
+.proyectos__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.proyectos__titulo {
+    align-self: center;
+}
+.proyectos__nombre{
+    text-align: start;
+    margin: 0;
+}
+.proyectos__descripcion{
+    margin: 0;
+}
+.proyectos__img {
+    max-width: 20rem;
+    align-self: center;
+}
+.proyectos__boton{
+    padding: 1rem;
+}
+.repositorio{
+    color: #2A7AE4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2A7AE4;
+}
+.demo{
+    background-color: #2A7AE4;
+    color: #F5F5F5;
+    border: none;
+}
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.contacto__imagen {
+    display: none;
+}
 
+.contacto__titulo {
+    text-align: start;
+    margin: 0;
+}
+
+.contacto__parrafo {
+    text-align: start;
+    margin: 0;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto__campo {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto__boton {
+    width: fit-content;
+    padding: 1rem;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto__boton:hover {
+    background-color: #2e8ae6;
+}
+
+/* ------------------------------ Sección de Footer ---------------------------------*/
+.footer {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer__titulo {
+    margin: 0;
+}
+
+.footer__subtitulo {
+    margin: 0;
+}
 
 /* ------------------------------ Responsividad ---------------------------------------*/
 
@@ -75,9 +345,10 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-inline: 2rem;
     }
 
-    .cabecera__logo {
+    .cabecera__img {
         max-width: 100px;
     }
 
@@ -93,18 +364,171 @@ a {
     }
 
     .navegacion__elemento a {
-        font-size: 1rem;
+        font-size: .8rem;
     }
+
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-inline: 2rem;
+    }
+    .presentacion__foto{
+        max-width: 20rem;
+    }
+    .habilidades{
+        padding-inline: 2rem;
+    }
+    .habilidades__elemento{
+        height: 7rem;
+        width: 14rem;
+    }
+    .aficiones{
+        padding-inline: 2rem;
+    }
+    .aficiones__elemento{
+        height: 7rem;
+        width: 14rem;
+    }
+    .formacion {
+        padding-inline: 2rem;
+    }
+    .formacion__lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .formacion__icono {
+        background-color: #FFFFFF;
+        max-width: 5rem;
+        padding-inline: 4rem;
+    }
+    .sobre-mi {
+        padding-inline: 2rem;
+    }
+
 }
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
+
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+
+    .cabecera {
+        padding-inline: 12rem;
+    }
     .cabecera__titulo {
         font-size: 1.8rem;
     }
-
+    .presentacion{
+        padding-inline: 12rem;
+        justify-content: center;
+    }
+    .presentacion__titulo{
+        font-size: 4.5rem;
+        margin: 0;
+        word-wrap: break-word;
+    }
+    .presentacion__subtitulo{
+        font-size: 1.2rem;
+    }
+    .presentacion__foto{
+        width: 40rem;
+    }
+    .sobre-mi {
+        padding-inline: 12rem;
+        padding-block: 4rem;
+    }
+    .sobre-mi__titulo {
+        font-size: 3rem;
+    }
+    .sobre-mi__texto {
+        font-size: 1.2rem;
+        padding-right: 30rem;
+    }
+    .sobre-mi__firma{
+        max-width: 15rem;
+    }
     .navegacion__elemento a {
         font-size: 1.1rem;
+    }
+    .presentacion__foto{
+        max-width: 100rem;
+    }
+    .habilidades{
+        padding-inline: 12rem;
+    }
+    .habilidades__titulo{
+        font-size: 3rem;
+    }
+    .habilidades__elemento{
+        height: 15rem;
+        width: 20rem;
+    }
+    .habilidades__icono{
+        width: 20rem;
+        padding-left: 1rem;
+    }
+    .habilidades__nombre{
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+    .aficiones{
+        padding-inline: 12rem;
+    }
+    .aficiones__titulo{
+        font-size: 3rem;
+    }
+    .aficiones__elemento{
+        height: 15rem;
+        width: 20rem;
+    }
+    .aficiones__icono{
+        width: 3rem;
+        padding-left: 1rem;
+    }
+    .aficiones__nombre{
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+    .formacion{
+        padding-inline: 12rem;
+    }
+    .formacion__titulo{
+        font-size: 3rem;
+    }
+    .formacion__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .formacion__icono{
+        background-color: #FFFFFF;
+        max-width: 20rem;
+        padding:10rem;
+    }
+    .proyectos__contenedor{
+        padding-inline: 12rem;
+    }
+    .proyectos__descripcion{
+        padding-right: 50rem;
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        flex-direction: row;
+        padding-inline: 12rem;
+        padding-block: 4rem;
+    }
+
+    .contacto__formulario{
+        width: 50rem;
+        gap: 2.5rem;
+    }
+    .contacto__imagen{
+        width: 30rem;
+        display: flex;
     }
 }
